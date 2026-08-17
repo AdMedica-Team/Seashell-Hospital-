@@ -1,0 +1,728 @@
+{
+  "topbar": {
+    "emergencyLabel": "Emergency:",
+    "support": "Patient support available around the clock",
+    "antiFraud": "Seashell Hospital will NEVER ask you to transfer money over a call. When in doubt, contact us.",
+    "antiFraudMore": "Learn more",
+    "close": "Close",
+    "appointments": "Appointments",
+    "emergency": "Emergency"
+  },
+  "nav": {
+    "services": "Services",
+    "centersOfExcellence": "Centers of Excellence",
+    "doctors": "Doctors",
+    "about": "About us",
+    "news": "News",
+    "patientInfo": "Patient Info",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "careers": "Careers",
+    "testimonials": "Patient stories",
+    "leadership": "Leadership",
+    "awards": "Accreditations & awards",
+    "callback": "Request a callback",
+    "pay": "Pay online",
+    "calculators": "Health calculators",
+    "quickLinks": "Quick links",
+    "languageSwitch": "عربي"
+  },
+  "meta": {
+    "title": "Seashell Hospital",
+    "description": "Seashell Hospital — trusted specialists, advanced diagnostics, and a human touch under one roof."
+  },
+  "actionBar": {
+    "bookAppointment": "Book appointment",
+    "findHospital": "Find a hospital",
+    "bookCheckup": "Book a checkup",
+    "specialistOpinion": "Get a specialist opinion"
+  },
+  "quickAccess": {
+    "bookAppointment": "Book an Appointment",
+    "findHospital": "Find a Hospital",
+    "bookHealthCheck": "Book a Health Checkup",
+    "getExpertOpinion": "Get Expert Opinion",
+    "requestCallback": "Request a Callback",
+    "findDoctor": "Find a Doctor",
+    "search": "Search",
+    "callUs": "Call Us",
+    "contracts": "Insurance & Corporate Contracts",
+    "contractsModalHeading": "Insurance & Corporate Contracts",
+    "contractsModalBody": "Looking to check an insurance partnership or set up a corporate contract with Seashell Hospital? Reach out to our team and we'll help you with the details.",
+    "contractsModalClose": "Close",
+    "contractsModalContact": "Contact us"
+  },
+  "home": {
+    "eyebrow": "Care that moves with you",
+    "headline": "Your health, thoughtfully cared for.",
+    "subtext": "Seashell Hospital brings trusted specialists, advanced diagnostics, and a human touch together under one roof.",
+    "searchPlaceholder": "Search doctors, departments, or conditions",
+    "bookCta": "Book Consultation",
+    "emergencyCta": "Emergency contact",
+    "hrLabel": "Heart rate",
+    "statusLabel": "Heart status",
+    "statusValue": "Excellent",
+    "trustLabel": "Excellence in diagnosis & patient care"
+  },
+  "ourFacilities": {
+    "eyebrow": "Take a look inside",
+    "heading": "Our Facilities & Care Spaces",
+    "body": "From operating theatres to inpatient rooms, every space at Seashell Hospital is designed around safety, cleanliness, and comfort.",
+    "surgery": "Operating Theatre",
+    "cssd": "Sterile Services Unit",
+    "icu": "Intensive Care Unit",
+    "inpatientRoom": "Inpatient Room"
+  },
+  "ourCommitment": {
+    "heading": "Our Commitment to Everyone We Serve",
+    "patientsTitle": "Patients",
+    "patientsBody": "Kind, attentive care that keeps your comfort and wellbeing at the center of every visit.",
+    "professionalsTitle": "Our Medical Teams",
+    "professionalsBody": "We invest in ongoing training and the right resources so our doctors and staff can deliver their best work.",
+    "partnersTitle": "Community & Partners",
+    "partnersBody": "We work closely with clinics, insurers, and community organizations to keep care connected and accessible."
+  },
+  "clinicalExcellence": {
+    "heading": "Clinical Excellence at Seashell Hospital",
+    "body1": "Seashell Hospital is a distinguished medical institution, home to a large team of highly skilled doctors and consultants across various medical specialties.",
+    "body2": "It provides the latest technology and medical services, with well-trained teams operating at the highest standards to ensure patient safety and comfort.",
+    "hospitalOwners": "Hospital Owners",
+    "vision": "Vision",
+    "mission": "Mission",
+    "topProcedures": "Top Specialties & Procedures",
+    "findDoctor": "Find Doctor",
+    "exploreMore": "Explore More",
+    "viewAllSpecialties": "View All Specialties"
+  },
+  "letUsHelp": {
+    "heading": "Let Us Help",
+    "subtext": "Simply tell us who you are and what you want to do below.",
+    "imA": "I'm a",
+    "lookingFor": "looking for",
+    "go": "Go",
+    "roles": {
+      "patient": "Patient",
+      "visitor": "Visitor",
+      "caregiver": "Caregiver",
+      "jobSeeker": "Job Seeker",
+      "doctor": "Doctor",
+      "student": "Student",
+      "patron": "Patron"
+    },
+    "goals": {
+      "findDoctor": "Find a Doctor",
+      "conditionsTreatments": "View Conditions & Treatments",
+      "checkSymptoms": "Check my Symptoms",
+      "bookAppointment": "Make or Change Appointment",
+      "viewServices": "View Services",
+      "faq": "Frequently Asked Questions",
+      "contactUs": "Contact Us",
+      "centersOfExcellence": "Centers of Excellence",
+      "news": "Latest News",
+      "about": "About Us",
+      "careers": "Open Positions"
+    }
+  },
+  "search": {
+    "heading": "Search results for \"{query}\"",
+    "noResults": "No matches found. Try a different department, doctor, or condition.",
+    "departments": "Departments",
+    "doctors": "Doctors"
+  },
+  "specialties": {
+    "heading": "Our Specialties"
+  },
+  "insurancePartners": {
+    "eyebrow": "Medical Insurance",
+    "heading": "Our Insurance Partners",
+    "body": "Seashell Hospital is contracted with a wide network of medical-insurance and corporate partners to make quality care accessible to you.",
+    "note": "…and more agreements are on the way."
+  },
+  "chatbot": {
+    "launcher": "Chat with us",
+    "title": "Seashell Assistant",
+    "subtitle": "Quick help, no waiting",
+    "greeting": "Hi! How can I help you today? Pick an option below or type your question.",
+    "menuBook": "Book an appointment",
+    "menuFindDoctor": "Find a doctor",
+    "menuDepartments": "Our departments",
+    "menuInsurance": "Insurance partners",
+    "menuCareers": "Careers",
+    "menuFaq": "Common questions",
+    "menuContact": "Contact & emergency",
+    "inputPlaceholder": "Type your message…",
+    "send": "Send",
+    "close": "Close",
+    "findDoctorPrompt": "Type a doctor's name or a specialty and I'll look it up for you.",
+    "departmentsIntro": "Here are our departments — tap one for details:",
+    "faqIntro": "Here are some common questions:",
+    "emergency": "Emergency",
+    "hotline": "Call center",
+    "whatsapp": "WhatsApp",
+    "contactPage": "Open the contact page",
+    "bookCta": "Book an appointment",
+    "bookGuidance": "Please send us your mobile number and we'll contact you shortly to arrange a suitable time.",
+    "addressLabel": "Our address",
+    "openMap": "Open on the map",
+    "careersIntro": "To apply, please send your CV to:",
+    "insuranceIntro": "We're currently contracted with the following medical-insurance providers:",
+    "insuranceNote": "…and more agreements are on the way.",
+    "resultsDepartments": "Department",
+    "resultsFaq": "Related questions",
+    "noResults": "I couldn't find a match for that.",
+    "searchAll": "Search the whole site"
+  },
+  "pages": {
+    "faq": {
+      "eyebrow": "Here to help",
+      "heading": "Questions, answered.",
+      "noItems": "No questions published yet."
+    },
+    "calculators": {
+      "eyebrow": "Self-service tools",
+      "heading": "Health calculators",
+      "intro": "Quick, private estimates you can use right now — no need to contact the hospital.",
+      "bmiTitle": "BMI calculator",
+      "bmiDesc": "Estimate your Body Mass Index from your height and weight.",
+      "bmrTitle": "BMR calculator",
+      "bmrDesc": "Estimate your Basal Metabolic Rate — the calories your body needs at rest.",
+      "bodyFatTitle": "Body fat calculator",
+      "bodyFatDesc": "Estimate your body fat percentage using the U.S. Navy method.",
+      "weightKg": "Weight (kg)",
+      "heightCm": "Height (cm)",
+      "age": "Age (years)",
+      "sex": "Sex",
+      "male": "Male",
+      "female": "Female",
+      "waistCm": "Waist (cm)",
+      "neckCm": "Neck (cm)",
+      "hipCm": "Hip (cm, women only)",
+      "calculate": "Calculate",
+      "yourResult": "Your result",
+      "bmiCategoryUnderweight": "Underweight",
+      "bmiCategoryNormal": "Normal weight",
+      "bmiCategoryOverweight": "Overweight",
+      "bmiCategoryObese": "Obese",
+      "caloriesPerDay": "calories/day at rest",
+      "disclaimer": "This is an estimate for general information only and is not a medical diagnosis. Speak with a doctor for personalized advice.",
+      "backToCalculators": "← All calculators"
+    },
+    "centersOfExcellence": {
+      "eyebrow": "Centers of Excellence",
+      "heading": "Depth of expertise, close to home.",
+      "procedures": "Key procedures & services",
+      "bookCta": "Book an appointment"
+    },
+    "appointment": {
+      "eyebrow": "Your appointment starts here",
+      "heading": "Request an appointment",
+      "subtext": "Share a few details and our appointments team will contact you to confirm a time.",
+      "name": "Full name",
+      "phone": "Phone number",
+      "department": "Department",
+      "chooseDepartment": "Choose a department",
+      "preferredDate": "Preferred date",
+      "notes": "Notes (optional)",
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "success": "Your request was received. Our appointments team will contact you shortly.",
+      "error": "Please fill in your name and a valid phone number."
+    },
+    "departments": {
+      "eyebrow": "Our specialties",
+      "heading": "Care, with clarity.",
+      "viewDetails": "View details",
+      "linkedDoctors": "Our doctors in this department",
+      "consultCta": "Consult this specialty",
+      "procedures": "Procedures & services"
+    },
+    "doctors": {
+      "eyebrow": "Our physicians",
+      "heading": "Meet your care team",
+      "bookWith": "Book with {name}",
+      "languages": "Languages",
+      "departments": "Departments"
+    },
+    "findDoctor": {
+      "eyebrow": "Find a doctor",
+      "heading": "Find the right doctor for you",
+      "chooseMode": "Not sure where to start? Search by",
+      "byName": "Doctors A-Z",
+      "bySpecialty": "By specialty",
+      "byCondition": "By condition",
+      "chooseLetter": "Browse by doctor name",
+      "chooseSpecialty": "Choose a specialty",
+      "chooseCondition": "Choose a condition",
+      "results": "Doctors",
+      "noResults": "No doctors found. Try another letter, specialty, or condition."
+    },
+    "careers": {
+      "eyebrow": "Careers",
+      "heading": "Join our team",
+      "viewDetails": "View details",
+      "apply": "Apply for this role",
+      "noOpenings": "No open positions right now — check back soon.",
+      "closesOn": "Closes on {date}"
+    },
+    "contact": {
+      "eyebrow": "Get in touch",
+      "heading": "We are here when you need us.",
+      "formName": "Full name",
+      "formEmail": "Email",
+      "formPhone": "Phone (optional)",
+      "formMessage": "Message",
+      "formSubmit": "Send message",
+      "formSuccess": "Thanks — we received your message and will get back to you soon.",
+      "address": "Address",
+      "hours": "Working hours",
+      "whatsapp": "WhatsApp",
+      "hotline": "Hotline",
+      "patientRights": "Patient rights"
+    },
+    "callback": {
+      "eyebrow": "We'll call you",
+      "heading": "Request a callback",
+      "intro": "Leave your number and we'll call you back. We'll send a verification code by SMS to confirm it's you.",
+      "name": "Full name",
+      "phone": "Phone number",
+      "sendCode": "Send verification code",
+      "sending": "Sending…",
+      "verifyIntro": "We sent a 6-digit code to {phone}. Enter it below to confirm.",
+      "devCodeNotice": "Development mode (SMS provider not connected): your code is {code}",
+      "code": "Verification code",
+      "verify": "Verify & request callback",
+      "verifying": "Verifying…",
+      "successTitle": "You're all set!",
+      "successBody": "Thanks {name} — your number is verified and our team will call you back shortly.",
+      "errorInvalid": "Please enter your name and a valid phone number.",
+      "errorInvalidCode": "Please enter the 6-digit code.",
+      "errorExpired": "The code has expired. Please request a new one.",
+      "errorTooMany": "Too many attempts. Please request a new code.",
+      "errorWrongCode": "That code isn't correct. Please try again."
+    },
+    "pay": {
+      "eyebrow": "Online payment",
+      "heading": "Pay your bill",
+      "intro": "Enter your bill reference number to view and pay it — no account needed.",
+      "reference": "Bill reference",
+      "referencePlaceholder": "e.g. SEA-2026-0001",
+      "referenceHint": "You'll find this on your invoice or SMS from the hospital.",
+      "lookup": "Find my bill",
+      "looking": "Searching…",
+      "errorInvalid": "Please enter a valid bill reference.",
+      "notFound": "No bill found for reference {reference}. Please check the number or contact us.",
+      "amount": "Amount due",
+      "payer": "Billed to",
+      "statusLabel": "Status",
+      "statusPaid": "Paid",
+      "statusUnpaid": "Unpaid",
+      "payNow": "Pay now",
+      "alreadyPaid": "This bill has already been paid. Thank you!",
+      "providerPending": "Online payment is being activated. For now, please pay at the hospital cashier or contact us — your bill details above are correct."
+    },
+    "news": {
+      "eyebrow": "News & updates",
+      "heading": "What's new at Seashell",
+      "empty": "No news published yet — check back soon.",
+      "readMore": "Read more",
+      "backToNews": "← All news"
+    },
+    "testimonials": {
+      "eyebrow": "Patient stories",
+      "heading": "In our patients' own words",
+      "intro": "Real experiences shared with consent by patients and their families.",
+      "empty": "No patient stories published yet."
+    },
+    "about": {
+      "eyebrow": "About us",
+      "heading": "Care built around you",
+      "intro": "Seashell Hospital brings trusted specialists, advanced diagnostics, and a human touch together under one roof. This introduction is placeholder copy pending your approved About content.",
+      "missionTitle": "Our mission",
+      "missionBody": "To deliver compassionate, evidence-based care that puts every patient's wellbeing first. (Placeholder — pending approved content.)",
+      "visionTitle": "Our vision",
+      "visionBody": "To be the region's most trusted destination for thoughtful, connected healthcare. (Placeholder — pending approved content.)",
+      "valuesTitle": "Our values",
+      "valuesBody": "Compassion, clarity, and clinical excellence in everything we do. (Placeholder — pending approved content.)",
+      "leadershipHeading": "Leadership",
+      "awardsHeading": "Accreditations & awards",
+      "awardsIntro": "Recognition of our commitment to safety and quality of care."
+    },
+    "legal": {
+      "privacy": {
+        "eyebrow": "Legal",
+        "heading": "Privacy Policy",
+        "updated": "Last updated: 15 August 2026",
+        "draftNotice": "Draft — this text is placeholder pending review by the hospital's legal counsel and alignment with Egyptian Personal Data Protection Law 151/2020 before publication.",
+        "sections": [
+          {
+            "heading": "1. Introduction",
+            "body": "This Privacy Policy explains how Seashell Hospital collects, uses, and protects your personal data when you use this website, in line with Egyptian Personal Data Protection Law No. 151 of 2020 (PDPL)."
+          },
+          {
+            "heading": "2. Data we collect",
+            "body": "We collect the details you provide through our forms — such as your name, phone number, email, and any information you include in an appointment request, callback request, or message to us."
+          },
+          {
+            "heading": "3. How we use your data",
+            "body": "We use your data only to respond to your requests, arrange appointments and callbacks, process payments where applicable, and improve our services. We do not sell your personal data."
+          },
+          {
+            "heading": "4. Legal basis & consent",
+            "body": "We process your data on the basis of your consent and to provide the services you request. You may withdraw your consent at any time by contacting us."
+          },
+          {
+            "heading": "5. Data retention & security",
+            "body": "We retain personal data only as long as necessary for the purposes described above and apply appropriate technical and organizational safeguards to protect it."
+          },
+          {
+            "heading": "6. Your rights",
+            "body": "Under the PDPL you have the right to access, correct, and request deletion of your personal data, and to object to certain processing. To exercise these rights, contact us using the details on our Contact page."
+          },
+          {
+            "heading": "7. Contact",
+            "body": "For any privacy question or request, please reach us through the channels listed on the Contact page."
+          }
+        ]
+      },
+      "terms": {
+        "eyebrow": "Legal",
+        "heading": "Terms & Conditions",
+        "updated": "Last updated: 15 August 2026",
+        "draftNotice": "Draft — this text is placeholder pending review by the hospital's legal counsel before publication.",
+        "sections": [
+          {
+            "heading": "1. Acceptance of terms",
+            "body": "By using this website you agree to these Terms & Conditions. If you do not agree, please do not use the site."
+          },
+          {
+            "heading": "2. Use of the website",
+            "body": "This website provides general information about Seashell Hospital's services and lets you request appointments, callbacks, and payments. You agree to provide accurate information when using our forms."
+          },
+          {
+            "heading": "3. Not medical advice",
+            "body": "Content on this website, including the health calculators, is for general information only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified doctor."
+          },
+          {
+            "heading": "4. Appointments & payments",
+            "body": "Submitting a request does not confirm an appointment until our team contacts you. Any online payments are handled through our approved payment provider under their terms."
+          },
+          {
+            "heading": "5. Intellectual property",
+            "body": "All content on this website is owned by Seashell Hospital or its licensors and may not be reused without permission."
+          },
+          {
+            "heading": "6. Changes to these terms",
+            "body": "We may update these terms from time to time. Continued use of the site after changes means you accept the updated terms."
+          }
+        ]
+      },
+      "antiFraud": {
+        "eyebrow": "Important notice",
+        "heading": "Anti-fraud notice",
+        "updated": "Last updated: 15 August 2026",
+        "sections": [
+          {
+            "heading": "Beware of fraud",
+            "body": "Seashell Hospital will never ask you to transfer money to a personal bank account or share your full card details, passwords, or one-time codes over the phone, email, or social media."
+          },
+          {
+            "heading": "Official channels only",
+            "body": "Only trust appointment, payment, and job-offer communications that come through our official website, hotline, and verified accounts. We never charge fees to apply for a job."
+          },
+          {
+            "heading": "How to verify",
+            "body": "If you receive a suspicious message claiming to be from Seashell Hospital, do not respond or pay. Contact us directly through the details on our Contact page to verify before taking any action."
+          },
+          {
+            "heading": "Report it",
+            "body": "If you believe you have been targeted by a scam using our name, please report it to us immediately so we can help and warn others."
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "sitemap": "Sitemap",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "antiFraud": "Anti-fraud notice",
+    "rights": "Copyright © Seashell Hospital {year}. All rights reserved.",
+    "support24": "24 hours",
+    "tagline": "Care & Trust",
+    "studio": "Design & development by Ewebbers Studio",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "admin": {
+    "brand": "seashell",
+    "brandSub": "admin",
+    "nav": {
+      "dashboard": "Dashboard",
+      "departments": "Departments",
+      "doctors": "Doctors",
+      "careers": "Careers",
+      "conditions": "Conditions",
+      "news": "News",
+      "testimonials": "Testimonials",
+      "leadership": "Leadership",
+      "awards": "Awards",
+      "faq": "FAQ",
+      "appointments": "Appointments",
+      "callbackRequests": "Callbacks",
+      "payments": "Payments",
+      "messages": "Messages",
+      "settings": "Settings",
+      "users": "Users",
+      "auditLog": "Audit log",
+      "logout": "Log out"
+    },
+    "login": {
+      "eyebrow": "Seashell CMS",
+      "title": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "error": "Invalid email or password."
+    },
+    "dashboard": {
+      "welcome": "Welcome, {name}",
+      "signedInAs": "Signed in as {email} · role: {role}",
+      "comingSoon": "Content management modules (doctors, departments, news, ...) land in Phase 3. This dashboard will surface them here."
+    },
+    "users": {
+      "title": "Users",
+      "newUser": "New user",
+      "colName": "Name",
+      "colEmail": "Email",
+      "colRole": "Role",
+      "colStatus": "Status",
+      "colLastLogin": "Last login",
+      "statusActive": "Active",
+      "statusDisabled": "Disabled",
+      "disable": "Disable",
+      "enable": "Enable",
+      "roleContentEditor": "Content editor",
+      "roleMarketingAdmin": "Marketing admin",
+      "roleSuperAdmin": "Super admin",
+      "never": "—"
+    },
+    "newUser": {
+      "title": "New user",
+      "subtitle": "The user should change this temporary password after first sign-in.",
+      "name": "Name",
+      "email": "Email",
+      "password": "Temporary password",
+      "role": "Role",
+      "submit": "Create user",
+      "submitting": "Creating…",
+      "error": "Please check the form fields."
+    },
+    "auditLog": {
+      "title": "Audit log",
+      "empty": "No activity recorded yet."
+    },
+    "common": {
+      "nameEn": "Name (English)",
+      "nameAr": "Name (Arabic)",
+      "slug": "Slug",
+      "titleEn": "Title (English)",
+      "titleAr": "Title (Arabic)",
+      "summaryEn": "Summary (English)",
+      "summaryAr": "Summary (Arabic)",
+      "descriptionEn": "Description (English)",
+      "descriptionAr": "Description (Arabic)",
+      "published": "Published",
+      "save": "Save",
+      "saving": "Saving…",
+      "edit": "Edit",
+      "delete": "Delete",
+      "new": "New",
+      "back": "Back to list",
+      "order": "Display order",
+      "error": "Please check the form fields.",
+      "yes": "Yes",
+      "no": "No",
+      "actions": "Actions"
+    },
+    "departments": {
+      "title": "Departments",
+      "newDepartment": "New department",
+      "colName": "Name",
+      "colPublished": "Published",
+      "colCoE": "Center of Excellence",
+      "isCenterOfExcellence": "Center of Excellence",
+      "coeBlurbEn": "Center of Excellence blurb (English)",
+      "coeBlurbAr": "Center of Excellence blurb (Arabic)",
+      "heroImage": "Hero image",
+      "coeImage": "Center of Excellence image",
+      "procedures": "Procedures / services",
+      "proceduresHint": "One per line. Use \"English name | Arabic name\" per line.",
+      "bookingCode": "Booking specialty code (used by \"Consult\" shortcuts)"
+    },
+    "doctors": {
+      "title": "Doctors",
+      "newDoctor": "New doctor",
+      "colName": "Name",
+      "colDepartments": "Departments",
+      "colFeatured": "Featured",
+      "colPublished": "Published",
+      "bioEn": "Bio (English)",
+      "bioAr": "Bio (Arabic)",
+      "photo": "Photo",
+      "languages": "Languages spoken",
+      "languagesHint": "Comma-separated, e.g. English, Arabic",
+      "departments": "Departments",
+      "featured": "Featured on homepage"
+    },
+    "conditions": {
+      "title": "Conditions",
+      "newCondition": "New condition",
+      "colName": "Name",
+      "colDepartments": "Departments",
+      "colDoctors": "Doctors",
+      "departments": "Related departments",
+      "doctors": "Related doctors"
+    },
+    "careers": {
+      "title": "Careers",
+      "newJob": "New job opening",
+      "colTitle": "Title",
+      "colStatus": "Status",
+      "open": "Open",
+      "closed": "Closed",
+      "descriptionEn": "Description (English)",
+      "descriptionAr": "Description (Arabic)",
+      "closesAt": "Closes on (optional)"
+    },
+    "settings": {
+      "title": "Site settings",
+      "emergencyNumber": "Emergency number",
+      "hotlineNumber": "Hotline number",
+      "whatsappNumber": "WhatsApp number",
+      "addressEn": "Address (English)",
+      "addressAr": "Address (Arabic)",
+      "workingHoursEn": "Working hours (English)",
+      "workingHoursAr": "Working hours (Arabic)",
+      "mapEmbedUrl": "Map embed URL",
+      "patientRightsEn": "Patient rights (English)",
+      "patientRightsAr": "Patient rights (Arabic)",
+      "saved": "Settings saved."
+    },
+    "faq": {
+      "title": "FAQ",
+      "newFaq": "New question",
+      "colQuestion": "Question",
+      "colCategory": "Category",
+      "colPublished": "Published",
+      "questionEn": "Question (English)",
+      "questionAr": "Question (Arabic)",
+      "answerEn": "Answer (English)",
+      "answerAr": "Answer (Arabic)",
+      "category": "Category"
+    },
+    "news": {
+      "title": "News",
+      "newPost": "New post",
+      "empty": "No posts yet.",
+      "colTitle": "Title",
+      "colDate": "Published date",
+      "colPublished": "Published",
+      "excerptEn": "Excerpt (English)",
+      "excerptAr": "Excerpt (Arabic)",
+      "bodyEn": "Body (English)",
+      "bodyAr": "Body (Arabic)",
+      "cover": "Cover image",
+      "currentImage": "A cover image is already set — upload a new one to replace it.",
+      "publishedAt": "Published date (optional)"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "newTestimonial": "New testimonial",
+      "empty": "No testimonials yet.",
+      "colName": "Name",
+      "colType": "Type",
+      "colConsent": "Consent",
+      "colPublished": "Published",
+      "typeText": "Text",
+      "typeVideo": "Video",
+      "displayNameEn": "Display name (English)",
+      "displayNameAr": "Display name (Arabic)",
+      "quoteEn": "Quote (English)",
+      "quoteAr": "Quote (Arabic)",
+      "videoUrl": "Video URL",
+      "videoHint": "YouTube or Vimeo link (optional).",
+      "photo": "Photo",
+      "rating": "Rating (1–5, optional)",
+      "consent": "Written consent obtained",
+      "consentHint": "A testimonial cannot be published until consent is confirmed."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "newMember": "New member",
+      "empty": "No leadership members yet.",
+      "colName": "Name",
+      "colRole": "Title",
+      "bioEn": "Bio (English)",
+      "bioAr": "Bio (Arabic)",
+      "photo": "Photo"
+    },
+    "awards": {
+      "title": "Awards",
+      "newAward": "New award",
+      "empty": "No awards yet.",
+      "colTitle": "Title",
+      "colIssuer": "Issuer",
+      "colYear": "Year",
+      "colPublished": "Published",
+      "issuerEn": "Issuer (English)",
+      "issuerAr": "Issuer (Arabic)",
+      "year": "Year",
+      "logo": "Logo"
+    },
+    "messages": {
+      "title": "Contact messages",
+      "empty": "No messages yet.",
+      "from": "From",
+      "markHandled": "Mark handled",
+      "statusNew": "New",
+      "statusHandled": "Handled"
+    },
+    "appointments": {
+      "title": "Appointment requests",
+      "empty": "No requests yet.",
+      "from": "From",
+      "department": "Department",
+      "preferredDate": "Preferred date",
+      "notes": "Notes",
+      "statusPending": "Pending",
+      "statusContacted": "Contacted",
+      "statusClosed": "Closed",
+      "markContacted": "Mark contacted",
+      "markClosed": "Mark closed"
+    },
+    "callbackRequests": {
+      "title": "Callback requests",
+      "empty": "No callback requests yet.",
+      "from": "From",
+      "verified": "Phone verified",
+      "statusPending": "Pending",
+      "statusContacted": "Contacted",
+      "statusClosed": "Closed",
+      "markContacted": "Mark contacted",
+      "markClosed": "Mark closed"
+    },
+    "payments": {
+      "title": "Payments",
+      "readOnly": "Read-only transaction log.",
+      "empty": "No transactions yet.",
+      "colReference": "Reference",
+      "colAmount": "Amount",
+      "colStatus": "Status",
+      "colProvider": "Provider",
+      "colDate": "Date",
+      "statusPaid": "Paid",
+      "statusPending": "Pending"
+    }
+  }
+}

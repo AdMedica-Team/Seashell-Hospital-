@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* --- Typography ---
+ * The licensed font files (TS Safaa / Century Gothic / Bukra) are not in the
+ * repo yet, so the @font-face rules below are disabled to avoid 404s. The font
+ * stacks in :root already fall back to system-ui until then.
+ *
+ * TO ENABLE: drop the .woff2 files into /public/fonts (see public/fonts/README.md)
+ * and un-comment this block.
+ *
+@font-face {
+  font-family: "TS Safaa";
+  src: url("/fonts/TSSafaa-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TS Safaa";
+  src: url("/fonts/TSSafaa-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/fonts/CenturyGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/fonts/CenturyGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bukra";
+  src: url("/fonts/Bukra-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bukra";
+  src: url("/fonts/Bukra-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+*/
+
+:root {
+  /* Brand palette — Seashell blue system */
+  --color-ink: #1f396b;    /* dark navy — text, headings, dark surfaces */
+  --color-muted: #6a76a0;  /* muted navy — secondary text */
+  --color-teal: #0090d7;   /* bright blue — primary accent, buttons, links */
+  --color-mint: #d9f1ff;   /* very light blue — soft backgrounds, hover */
+  --color-line: #bccefb;   /* light periwinkle — borders */
+  --color-cream: #eaf3ff;  /* light cool tint */
+
+  --font-display: "TS Safaa", "Century Gothic", system-ui, sans-serif;
+  --font-body-en: "Century Gothic", system-ui, sans-serif;
+  --font-body-ar: "Bukra", system-ui, sans-serif;
+  --font-body: var(--font-body-en);
+}
+
+html[lang="ar"] {
+  --font-body: var(--font-body-ar);
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-teal: var(--color-teal);
+  --color-mint: var(--color-mint);
+  --color-line: var(--color-line);
+  --color-cream: var(--color-cream);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: #f5f6f7;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Icons with inherent left/right directionality (chevrons, arrows) get mirrored in RTL. */
+[dir="rtl"] .icon-flip {
+  transform: scaleX(-1);
+}
+
+/* Slow continuous breathing zoom for the spotlighted image in a hover gallery. */
+@keyframes breathing-zoom {
+  0%,
+  100% {
+    transform: scale(1.18);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+/* --- Hero video sizing ---
+ * Mobile/portrait: the iframe simply fills its 16:9 container, so the WHOLE
+ * frame is visible (no side-cropping of the people on screen). From `sm` up
+ * (landscape-ish screens) it switches to a cover fill that keeps a 16:9 ratio
+ * while filling the taller hero, cropping only what overflows.
+ */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (min-width: 640px) {
+  .hero-video {
+    inset: auto;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: max(100vw, 177.78vh);
+    height: max(56.25vw, 100vh);
+  }
+}
+
+/* --- Partner logo marquee ---
+ * Two rows scrolling in opposite directions ("train" motion). The track holds
+ * TWO copies of the row, so translating it by -50% loops seamlessly. Pauses on
+ * hover, and respects reduced-motion preferences.
+ */
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.marquee-viewport {
+  /* Logos are direction-neutral; force LTR so the translateX animation behaves
+   * identically on RTL pages (otherwise the track lays out off-screen). */
+  direction: ltr;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-ltr var(--marquee-duration, 45s) linear infinite;
+}
+.marquee-track-reverse {
+  animation-name: marquee-rtl;
+}
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

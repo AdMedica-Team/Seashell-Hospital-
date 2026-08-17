@@ -1,0 +1,317 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  CONTENT_EDITOR
+  MARKETING_ADMIN
+  SUPER_ADMIN
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         Role
+  isActive     Boolean   @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  auditLogs    AuditLog[]
+}
+
+model Department {
+  id                   String   @id @default(cuid())
+  slug                 String   @unique
+  nameEn               String
+  nameAr               String
+  summaryEn            String
+  summaryAr            String
+  descriptionEn        String
+  descriptionAr        String
+  heroImageUrl         String?
+  isCenterOfExcellence Boolean  @default(false)
+  coeBlurbEn           String?
+  coeBlurbAr           String?
+  coeImageUrl          String?
+  bookingSpecialtyCode String?
+  isPublished          Boolean  @default(false)
+  order                Int      @default(0)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  procedures DepartmentProcedure[]
+  doctors    DoctorDepartment[]
+  conditions ConditionDepartment[]
+}
+
+model DepartmentProcedure {
+  id           String     @id @default(cuid())
+  departmentId String
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  nameEn       String
+  nameAr       String
+  order        Int        @default(0)
+}
+
+model Doctor {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  nameEn      String
+  nameAr      String
+  titleEn     String
+  titleAr     String
+  bioEn       String
+  bioAr       String
+  photoUrl    String?
+  languages   String[]
+  isFeatured  Boolean  @default(false)
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  departments DoctorDepartment[]
+  conditions  ConditionDoctor[]
+}
+
+model DoctorDepartment {
+  doctorId     String
+  departmentId String
+  isPrimary    Boolean @default(false)
+
+  doctor     Doctor     @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+  department Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+
+  @@id([doctorId, departmentId])
+}
+
+model Condition {
+  id     String @id @default(cuid())
+  slug   String @unique
+  nameEn String
+  nameAr String
+
+  departments ConditionDepartment[]
+  doctors     ConditionDoctor[]
+}
+
+model ConditionDepartment {
+  conditionId  String
+  departmentId String
+
+  condition  Condition  @relation(fields: [conditionId], references: [id], onDelete: Cascade)
+  department Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+
+  @@id([conditionId, departmentId])
+}
+
+model ConditionDoctor {
+  conditionId String
+  doctorId    String
+
+  condition Condition @relation(fields: [conditionId], references: [id], onDelete: Cascade)
+  doctor    Doctor    @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  @@id([conditionId, doctorId])
+}
+
+model NewsPost {
+  id            String    @id @default(cuid())
+  slug          String    @unique
+  titleEn       String
+  titleAr       String
+  excerptEn     String
+  excerptAr     String
+  bodyEn        String
+  bodyAr        String
+  coverImageUrl String?
+  publishedAt   DateTime?
+  isPublished   Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Testimonial {
+  id              String   @id @default(cuid())
+  displayNameEn   String
+  displayNameAr   String
+  quoteEn         String?
+  quoteAr         String?
+  videoUrl        String?
+  photoUrl        String?
+  rating          Int?
+  consentObtained Boolean  @default(false)
+  isPublished     Boolean  @default(false)
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model JobOpening {
+  id            String    @id @default(cuid())
+  slug          String    @unique
+  titleEn       String
+  titleAr       String
+  descriptionEn String
+  descriptionAr String
+  isOpen        Boolean   @default(true)
+  postedAt      DateTime  @default(now())
+  closesAt      DateTime?
+}
+
+model FAQItem {
+  id          String  @id @default(cuid())
+  questionEn  String
+  questionAr  String
+  answerEn    String
+  answerAr    String
+  category    String
+  isPublished Boolean @default(true)
+  order       Int     @default(0)
+}
+
+model Award {
+  id          String  @id @default(cuid())
+  titleEn     String
+  titleAr     String
+  issuerEn    String?
+  issuerAr    String?
+  year        Int
+  logoUrl     String?
+  order       Int     @default(0)
+  isPublished Boolean @default(true)
+}
+
+model LeadershipMember {
+  id       String  @id @default(cuid())
+  nameEn   String
+  nameAr   String
+  titleEn  String
+  titleAr  String
+  bioEn    String
+  bioAr    String
+  photoUrl String?
+  order    Int     @default(0)
+}
+
+model Page {
+  id      String         @id @default(cuid())
+  slug    String         @unique
+  titleEn String
+  titleAr String
+  blocks  ContentBlock[]
+}
+
+model ContentBlock {
+  id     String @id @default(cuid())
+  pageId String
+  page   Page   @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  type   String
+  order  Int    @default(0)
+  dataEn Json
+  dataAr Json
+}
+
+model SiteSettings {
+  id                String  @id @default(cuid())
+  emergencyNumber   String  @default("12345")
+  hotlineNumber     String  @default("+20 3 1234 5678")
+  whatsappNumber    String?
+  addressEn         String  @default("")
+  addressAr         String  @default("")
+  workingHoursEn    String  @default("")
+  workingHoursAr    String  @default("")
+  mapEmbedUrl       String?
+  patientRightsEn   String  @default("")
+  patientRightsAr   String  @default("")
+  updatedAt         DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+}
+
+model AppointmentRequest {
+  id            String    @id @default(cuid())
+  name          String
+  phone         String
+  departmentId  String?
+  preferredDate DateTime?
+  notes         String?
+  status        String    @default("PENDING")
+  createdAt     DateTime  @default(now())
+}
+
+model CallbackRequest {
+  id            String    @id @default(cuid())
+  name          String
+  phone         String
+  phoneVerified Boolean   @default(false)
+  otpVerifiedAt DateTime?
+  status        String    @default("PENDING")
+  notes         String?
+  createdAt     DateTime  @default(now())
+}
+
+model OtpChallenge {
+  id         String    @id @default(cuid())
+  phone      String
+  codeHash   String
+  expiresAt  DateTime
+  attempts   Int       @default(0)
+  consumedAt DateTime?
+  createdAt  DateTime  @default(now())
+}
+
+model PaymentTransaction {
+  id                    String   @id @default(cuid())
+  referenceNumber       String
+  amount                Decimal
+  currency              String   @default("EGP")
+  payerName             String?
+  payerPhone            String?
+  status                String   @default("PENDING")
+  providerName          String
+  providerTransactionId String?
+  rawProviderPayload    Json?
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  action     String
+  entityType String
+  entityId   String
+  diff       Json
+  createdAt  DateTime @default(now())
+}
+
+model SearchableEntity {
+  id         String @id @default(cuid())
+  entityType String
+  entitySlug String
+  titleEn    String
+  titleAr    String
+  keywordsEn String
+  keywordsAr String
+
+  @@index([entityType])
+}
